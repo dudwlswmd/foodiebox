@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <!-- <link rel="icon" href="파비콘로고넣는곳" type="image/x-icon">  -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/foodJson.js" type="text/javascript"></script>
+
+    <!-- <script src="js/swiper.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <title>푸디박스</title>
+</head>
+<body class="scroll_bar">
+    <header>
+        <div class="h_top">
+            <div class="inner">
+                <h1><a href="index.html"><img src="logo/foodiebox.svg" alt="">메인로고</a></h1>
+                <div class="gnb_sch_form">
+                    <form name="h_form" id="h_form" action="">
+                        <input type="text" name="s_value" id="s_value" value="" maxlength="30" 
+                        placeholder="제품, 요리명 등 다양하게 검색해보세요!(예: 밀키트)" 
+                        title="검색어를 입력해주세요.">
+                        <label for="">
+                            <a href="" class="btn_sch"><img src="img/top_sch.png" alt="검색"></a>
+                        </label>
+                    </form>
+                </div><!--gnb_sch_form : END-->
+                <ul>
+                    <li><a href="">라면맛집</a></li>
+                    <li><a href="">XO만두</a></li>
+                </ul>
+            </div><!--inner : END-->
+        </div><!--h_top : END-->
+        <nav>
+            <div class="inner">
+                <ul class="gnb">
+                    <li class="gnb_menu">
+                        <p class="bar"><span></span></p>
+                        <a>카테고리</a>
+                        <div class="gnb_sub">
+                            <ul class="subTabMenu">
+                                <li><a href="">배달</a></li>
+                                <li><a href="">픽업/홀</a></li>
+                                <li><a href="">밀키트</a></li>
+                                <li><a href="">마트</a></li>
+                                <li><a href="">선물하기</a></li>
+                            </ul><!--subTabMenu : END-->
+                            <div class="conWra">
+                                <ul class="subTabMenuCon on">
+                                    <li><a href="">1인분</a></li>
+                                    <li><a href="">치킨</a></li>
+                                    <li><a href="">피자</a></li>
+                                    <li><a href="">한식</a></li>
+                                    <li><a href="">중식/아시안</a></li>
+                                    <li><a href="">일식/돈까스/회</a></li>
+                                    <li><a href="">양식</a></li>
+                                    <li><a href="">족발/보쌈</a></li>
+                                    <li><a href="">고기/구이</a></li>
+                                    <li><a href="">분식</a></li>
+                                    <li><a href="">페스트푸드</a></li>
+                                    <li><a href="">카페.디저트</a></li>
+                                </ul><!--subTabMenuCon : END-->
+                                <ul class="subTabMenuCon">
+                                    <li><a href="">미리 주문하고 포장하기</a></li>
+                                    <li><a href="">미리 주문하고 홀에서 식사</a></li>
+                                </ul><!--subTabMenuCon : END-->
+                                <ul class="subTabMenuCon">
+                                    <li><a href="">#전국맛집지도</a></li>
+                                    <li><a href="">밀키트 기획전</a></li>
+                                    <li><a href="">간편/메인요리</a></li>
+                                    <li><a href="">데일리 반찬</a></li>
+                                    <li><a href="">밥/도시락/면</a></li>
+                                    <li><a href="">국/탕/찌개</a></li>
+                                    <li><a href="">구이/볶음/찜</a></li>
+                                    <li><a href="">안주/야식</a></li>
+                                    <li><a href="">간식/음료</a></li>
+                                    <li><a href="">식단/건강관리</a></li>
+                                </ul><!--subTabMenuCon : END-->
+                                <ul class="subTabMenuCon">
+                                    <li><a href="">이달의 신상템</a></li>
+                                    <li><a href="">베스트셀러</a></li>
+                                    <li><a href="">타임세일</a></li>
+                                    <li><a href="">맛있는 것 - </a></li>
+                                    <li><a href="">편리한 것 - </a></li>
+                                    <li><a href="">기획전</a></li>
+                                </ul><!--subTabMenuCon : END-->
+                                <ul class="subTabMenuCon">
+                                    <li><a href="">선물하기 바로가기</a></li>
+                                </ul><!--subTabMenuCon : END-->
+                            </div><!--conWra : END-->
+                        </div><!--gnb_sub : END-->
+                    </li>
+                    <li><a href="">이벤트 / 쿠폰</a></li>
+                    <li><a href="">인기 레시피</a></li>
+                    <li><a href="">신규점포</a></li>
+                </ul><!--gnb : END-->
+                <ul class="nav_gnb_r">
+                    <li><a href="">기업형몰</a></li>
+                    <li><a href="">최근 본 레시피</a></li>
+                </ul><!--nav_gnb_r : END-->
+            </div><!--inner : END-->
+        </nav>
+    </header>
+    <div class="visual">
+
+        <div class="slider visual_slider">
+            <!-- 슬라이드 -->
+            <ul class="list swiper-wrapper">
+                <li class="swiper-slide ">
+                    <a href="">
+                        <img src="img/deliver_slide.jpg" class="web" alt="">
+                        <img src="img/mobile/deliver_mobile.jpg" class="mobile" alt="">
+                        <div class="txt">
+                            <h2><strong>푸디박스 전국배송</strong>GRAND OPEN</h3>
+                            <h3>전국 + 지정일 배송<br>
+                                <strong>서비스를 만나보세요</strong></h1>
+                            <!-- <div class="tag"><span>#생일축하해</span><span>#핫케이크</span></div> -->
+                            <button class="btn btn-red mainbtn mt30">푸디박스 전국배송 바로가기<i></i></button>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide ">
+                    <a href="">
+                        <img src="img/coupon_slide.jpg" class="web" alt="">
+                        <img src="img/mobile/coupon_mobile.jpg" class="mobile" alt="">
+                        <div class="txt">
+                            <h2><strong>5월 얼리버드</strong> 쿠폰</h3>
+                            <h3>오늘 구매하면<br>
+                                <strong>할인쿠폰을 드려요!</strong></h1>
+                            <!-- <div class="tag"><span>#채식</span><span>#카레토마토솥밥</span></div> -->
+                            <button class="btn btn-red mainbtn mt30">할인쿠폰 바로가기<i></i></button>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide ">
+                    <a href="">
+                        <img src="img/camp_slide.jpg" class="web" alt="">
+                        <img src="img/mobile/card_mobile.jpg" class="mobile" alt="">
+                        <div class="txt">
+                            <h2><strong>4월의</strong>카드 혜택!</h3>
+                            <h3>신한/삼성/록데<br>
+                                <strong>결제일 할인 혜택</strong></h1>
+                            <!-- <div class="tag"><span>#얼큰한</span><span>#열라면</span><span>#순두부열라면</span></div> -->
+                            <button class="btn btn-red mainbtn mt30">카드 할인 혜택 보기<i></i></button>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide ">
+                    <a href="">
+                        <img src="img/gift_slide.jpg" class="web" alt="">
+                        <img src="img/mobile/gift_mobile.jpg" class="mobile" alt="">
+                        <div class="txt">
+                            <h2><strong>따뜻한 집밥을</strong>선물하세요!</h3>
+                            <h3>선물하기 이용시<br>
+                                <strong>중복 +3%할인</strong></h1>
+                            <!-- <div class="tag"><span>#XO만두</span><span>#떡만둣국</span><span>#뜨끈한국물</span></div> -->
+                            <button class="btn btn-red mainbtn mt30">선물하기 바로가기<i></i></button>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide ">
+                    <a href="">
+                        <img src="img/slide_.jpg" class="web" alt="">
+                        <img src="img/mobile/app_push_mobile.jpg" class="mobile" alt="">
+                        <div class="txt">
+                            <h2><strong>APP-PUSH</strong>알림 동의 이벤트</h3>
+                            <h3>APP PUSH 동의하고<br>
+                                <strong>혜택 받으세요!</strong></h1>
+                            <!-- <div class="tag"><span>#허브</span><span>#스파이스</span></div> -->
+                            <button class="btn btn-red mainbtn mt30">자세한 이용 방법 보기<i></i></button>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- 슬라이드 타이틀 (pagination) -->
+            <ul class="slide_tit slide_dot">
+                <li>푸디박스 배송</li>
+                <li>얼리버드 쿠폰</li>
+                <li>4월의 카드 혜택</li>
+                <li>집밥 선물해요</li>
+                <li>알림 이벤트</li>
+            </ul>
+        
+            <!-- 버튼, 페이지 번호 -->
+            <div class="control">
+                <span class="btn btn_prev">&lt;</span>
+                <span class="num"></span>
+                <span class="btn btn_next">&gt;</span>
+                <button class="stopBtn">멈춤</button>
+            </div>
+        </div>
+        <script>
+                // 문서가 로드되면 실행
+                // document.addEventListener('DOMContentLoaded', function() {
+                // 슬라이더 함수 실행
+                // slider();
+                // });
+                
+                // 슬라이더 함수 정의
+                function slider() {
+                // 슬라이드 타이틀을 담을 배열 생성
+                let titArray = [];
+                // 모든 슬라이드 타이틀(li)에 대해 반복문 실행
+                let slideTit = document.querySelectorAll('.visual_slider .slide_tit > li');
+                for (let i = 0; i < slideTit.length; i++) {
+                    // 타이틀의 텍스트를 가져와서 titArray 배열에 추가
+                    let txt = slideTit[i].textContent;
+                    titArray.push(txt);
+                }
+                
+                // 슬라이드 전체 페이지 번호를 나타내는 요소
+                let num = document.querySelector('.visual_slider .num');
+                // 슬라이드 전체 개수
+                let slides = document.querySelectorAll('.visual_slider .swiper-slide');
+                let slideCount = slides.length;
+                // 슬라이드 전체 페이지 번호 초기화
+                num.innerHTML = '1 / ' + slideCount;
+                
+                // 슬라이드 시작
+                let visual_slider = new Swiper('.visual_slider', {
+                    loop: true, // 무한반복 여부
+                    slidesPerView: 1, // 슬라이드 당 보여질 슬라이드 수
+                    autoplay: { // 자동 재생 옵션
+                        delay: 5000, // 자동 재생 지연 시간
+                        disableOnInteraction: false, // 사용자의 동작에 따라 자동 재생 일시 중지 여부
+                    },
+                    effect: 'fade', // 슬라이드 전환 효과
+                    fadeEffect: { // 페이드 인/아웃 효과 설정
+                    crossFade: true // 교차 페이드 인/아웃 여부
+                    },
+                    navigation: { // 이전/다음 버튼 옵션
+                    nextEl: '.slider .btn_next', // 다음 버튼 요소
+                    prevEl: '.slider .btn_prev', // 이전 버튼 요소
+                    },
+                    // 페이지네이션 옵션
+                    pagination: {
+                    el: '.slider .slide_tit', // 페이지네이션 요소
+                    clickable: true, // 페이지네이션 요소 클릭 여부
+                    type: 'bullets', // 페이지네이션 타입 (원형 모양)
+                    renderBullet: function (index, className) {
+                        // 원형 모양 페이지네이션 타이틀과 페이지 번호를 설정하는 함수
+                        return '<li class="' + className + '"><span class="bar"></span><strong class="txt">' + titArray[index] + '</strong></li>';
+                    },
+                    },
+                    // 슬라이드 변경 시 현재 페이지 번호 갱신
+                    on: {
+                    slideChange: function () {
+                        // num.innerHTML = '<span>' + (swiper.realIndex + 1) + '</span> / ' + slideCount;
+                        num.innerHTML = `<span>${visual_slider.realIndex + 1} / ${slideCount}</span>`  ;
+                    }
+                    }
+                });
+                
+                    // const stopBtn = document.querySelector('.stopBtn')
+                    // const bar = document.querySelector('.swiper-pagination-bullet.swiper-pagination-bullet-active span')
+                    // console.log(bar);
+                    // stopBtn.addEventListener('click',function(){
+                    //     stopBtn.classList.toggle('stop');
+                    //     if(stopBtn.classList.contains('stop')){
+                    //         visual_slider.autoplay.stop()
+                    //         bar.classList.remove('bar')
+                    //     } else {
+                    //         visual_slider.autoplay.start()
+                    //         bar.classList.add('bar')
+
+                    //     }
+                    // })
+                    // 'stopBtn' 클래스를 가진 요소를 선택합니다.
+                    const stopBtn = document.querySelector('.stopBtn');
+
+                    // '.swiper-pagination-bullet' 클래스와 'bar' 클래스를 포함하는 모든 요소를 선택합니다.
+                    const bars = document.querySelectorAll('.swiper-pagination-bullet .bar');
+
+                    // 'stopBtn' 요소에 클릭 이벤트를 추가.
+                    stopBtn.addEventListener('click', function() {
+                    // 'stopBtn' 요소의 클래스에 'stop' 클래스를 토글
+                    stopBtn.classList.toggle('stop');
+                    // 'stopBtn' 요소에 'stop' 클래스가 포함되어 있는 경우
+                    if (stopBtn.classList.contains('stop')) {
+                        // 슬라이더의 자동 재생을 중지합니다.
+                        visual_slider.autoplay.stop();
+                        // '.swiper-pagination-bullet' 클래스와 'bar' 클래스를 포함하는 요소가 1개 이상인 경우
+                        if (bars.length > 0) {
+                        // 'bars' 변수에 저장된 모든 요소에서 'bar' 클래스를 제거.
+                        bars.forEach(function(bar) {
+                            bar.classList.remove('bar');
+                        });
+                        }
+                    // 'stopBtn' 요소에 'stop' 클래스가 포함되어 있지 않은 경우
+                    } else {
+                        // 슬라이더의 자동 재생을 시작합니다.
+                        visual_slider.autoplay.start();
+                        // '.swiper-pagination-bullet' 클래스와 'bar' 클래스를 포함하는 요소가 1개 이상인 경우
+                        if (bars.length > 0) {
+                        // 'bars' 변수에 저장된 모든 요소에서 'bar' 클래스를 추가해서 다시 시간이 지나는것처럼보여줌.
+                        bars.forEach(function(bar) {
+                            bar.classList.add('bar');
+                        });
+                        }
+                    }
+                    });
+                    //스와이퍼 하다가 궁금한거있으면 옵션을 보고 옵션도 모르겠으면 물어봐요//주석때문에 보기 불편하면 아래꺼 참고
+
+                    // const stopBtn = document.querySelector('.stopBtn');
+                    // const bars = document.querySelectorAll('.swiper-pagination-bullet .bar');
+
+                    // stopBtn.addEventListener('click', function() {
+                    // stopBtn.classList.toggle('stop');
+
+                    // if (stopBtn.classList.contains('stop')) {
+                    //     visual_slider.autoplay.stop();
+                    //     if (bars.length > 0) {
+                    //     bars.forEach(function(bar) {
+                    //         bar.classList.remove('bar');
+                    //     });
+                    //     }
+                    // } else {
+                    //     visual_slider.autoplay.start();
+                    //     if (bars.length > 0) {
+                    //     bars.forEach(function(bar) {
+                    //         bar.classList.add('bar');
+                    //     });
+                    //     }
+                    // }
+                    // });
+                }
+                slider();
+            
+            
+            </script>
+
+    </div><!--visual : END-->
+    
+    <main>
+        <section class="section1">
+
+            <div class="inner">
+                <div class="section1_left">
+                    <h2>
+                        이건 어때요?<br />인기 검색어
+                    </h2>
+                    <p>고민을 덜어주는 추천 검색어</p>
+                    <ul>
+                        <li><a href="">#K점심메뉴</a></li>
+                        <li><a href="">#디저트템</a></li>
+                        <li><a href="">#원플레이트</a></li>
+                        <li><a href="">#4천원이하</a></li>
+                        <li><a href="">#우리집의 심야식당</a></li>
+                        <li><a href="">#최저가 할인템</a></li>
+                        <li><a href="">#자취러꿀템</a></li>
+                        <li><a href="">#초간편 렌지요리</a></li>
+                        <li><a href="">#이달의 신상</a></li>
+                        <li><a href="">#속세의 맛 시단템</a></li>
+                    </ul>
+                </div><!--section1_left : END-->
+                <div class="section1_right">
+                    <div class="content1">
+                        <h3>Kid's Cooking<span>인기 추천 밀키트</span></h3>
+                        <div class="kiz_slide">
+                            <div class="swiper kizSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/kiz01.png" alt="">
+                                        <div class="txt">
+                                            <h4>옥수수푸딩</h4>
+                                            <p>#옥수수푸딩 #콘스프</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/kiz02.png" alt="">
+                                        <div class="txt">
+                                            <h4>옥수수푸딩</h4>
+                                            <p>#옥수수푸딩 #콘스프</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/kiz03.png" alt="">
+                                        <div class="txt">
+                                            <h4>옥수수푸딩</h4>
+                                            <p>#옥수수푸딩 #콘스프</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="next_prev">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <div class="swiper-pagination kiz"></div>
+                            </div><!--mySwiper : END-->
+                        </div><!--bu : END-->
+
+                    </div><!--content1 : END-->
+                    <div class="content2">
+                        <h3>History<span>최근 본 레시피</span></h3>
+                        <p>최근에 본 레시피를<br /> 다시 찾아 볼 수 있습니다.</p>
+                        <img src="img/img01.jpg" alt="">
+                        <dl>
+                            <dt>#토마토 #솥밥 #카레</dt>
+                            <dd>카레 토마토솥밥</dd>
+                        </dl>
+                        <div class="plus"><a href="">더보기</a></div>
+                    </div><!--content1 : END-->
+                    <div class="content3">
+                        <a href="">
+                            <h3>푸디박스의 <br />쉽고 간단한 <br />계량 꿀팁!</h3>
+                            <p>밥숟가락,종이컵으로 간단하고 쉽게 알려드립니다.</p>
+                        </a>
+                    </div><!--content1 : END-->
+                </div><!--section1_right : END-->
+            </div><!--inner : END-->
+        </section><!--section1 : END-->
+        <section class="section2">
+            <div>
+                <p class="center_img">
+                    <img src="img/tabcenter01.png" class="on" alt="">
+                    <img src="img/tabcenter02.png" alt="">
+                    <img src="img/tabcenter03.png" alt="">
+                    <img src="img/tabcenter04.png" alt="">
+                </p><!--center_img : END-->
+                <div class="tabMenu">
+                    <h3>SELECTO MENU</h3>
+                    <ul>
+                        <li class="active"><button>SIGNATURE</button></li>
+                        <li><button>BEVERAGE</button></li>
+                        <li><button>COFFEE</button></li>
+                        <li><button>COOKIE</button></li>
+                    </ul>
+                </div><!--tabMenu : END-->
+                <ul class="tabCon1">
+                    <li class="on"><div class="con"></div></li>
+                    <li><div class="con"></div></li>
+                    <li><div class="con"></div></li>
+                    <li><div class="con"></div></li>
+                </ul>
+                <ul class="tabCon2">
+                    <li class="on">
+                        <div class="con">
+                            <h3>COFFEE</h3>
+                            <p>셀렉토는 품질 좋은 원두를 선별해, 최적의 로스팅 포인트로<br />
+                            더욱 섬세하게 균형잡힌 풍미의 커피를 고객에게 선사합니다.</p>
+                            <ul>
+                                <li><img src="img/coffee01.png" alt=""></li>
+                                <li><img src="img/coffee02.png" alt=""></li>
+                                <li><img src="img/coffee03.png" alt=""></li>
+                            </ul>
+                            <dl>
+                                <dt>추천 토핑류</dt>
+                                <dd>
+                                    <img src="img/s_coffee01.png" alt="">
+                                    <span>시럽_바닐라빈</span>
+                                </dd>
+                                <dd>
+                                    <img src="img/s_coffee02.png" alt="">
+                                    <span>시럽_카라멜</span>
+                                </dd>
+                                <dd>
+                                    <img src="img/s_coffee03.png" alt="">
+                                    <span>우유_오트밀</span>
+                                </dd>
+                                <dd>
+                                    <img src="img/s_coffee04.png" alt="">
+                                    <span>크림_흑임자</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con">
+                            <h3>BEVERAGE</h3>
+                            <p>고객의 라이프 스타일에 맞춰 더욱 다양하게 즐길<br />
+                                수 있는 셀렉토의 음료 라인업!</p>
+                            <ul>
+                                <li><img src="img/coffee01.png" alt=""></li>
+                                <li><img src="img/coffee02.png" alt=""></li>
+                                <li><img src="img/coffee03.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con">
+                            <h3>SIGNATURE</h3>
+                            <p>셀렉토 감성과 재미를 듬뿍 담아 낸, 셀렉토에서
+                                맛볼 수 있는 시그니처 음료</p>
+                            <ul>
+                                <li><img src="img/coffee01.png" alt=""></li>
+                                <li><img src="img/coffee02.png" alt=""></li>
+                                <li><img src="img/coffee03.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con">
+                            <h3>COFFEE</h3>
+                            <p>셀렉토는 품질 좋은 원두를 선별해, 최적의 로스팅 포인트로<br />
+                            더욱 섬세하게 균형잡힌 풍미의 커피를 고객에게 선사합니다.</p>
+                            <ul>
+                                <li><img src="img/coffee01.png" alt=""></li>
+                                <li><img src="img/coffee02.png" alt=""></li>
+                                <li><img src="img/coffee03.png" alt=""></li>
+                            </ul>
+                            <dl>
+                                <dt>추천 토핑류</dt>
+                                <dd>
+                                    <img src="img/s_coffee01.png" alt="">
+                                    <span>시럽_바닐라빈</span>
+                                </dd>
+                                <dd>
+                                    <img src="img/s_coffee02.png" alt="">
+                                    <span>시럽_카라멜</span>
+                                </dd>
+                                <dd>
+                                    <img src="img/s_coffee03.png" alt="">
+                                    <span>우유_오트밀</span>
+                                </dd>
+                                <dd>
+                                    <img src="img/s_coffee04.png" alt="">
+                                    <span>크림_흑임자</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div><!--tabMenu : END-->
+            <script>
+                const tabMenuList = document.querySelectorAll('.tabMenu ul li');
+                const tabCon1List = document.querySelectorAll('.tabCon1 > li');
+                const tabCon2List = document.querySelectorAll('.tabCon2 > li');
+                const centerImgBu = document.querySelector('.center_img ');
+                const centerImg = document.querySelectorAll('.center_img img');
+
+                num = 0;
+
+                tabMenuList.forEach(function(e,index){
+                    e.addEventListener('click',function(){
+                        this.classList.add('active');
+                        this.classList.add('active')
+                        //tabCon1List[num2].classList.add('on2')
+                        centerImg[num].classList.remove('on')
+
+                        tabMenuList[num].classList.remove('active')
+                        tabCon1List[num].classList.remove('on')
+                        tabCon2List[num].classList.remove('on')
+                        tabCon1List.forEach(function(element){
+                            element.classList.remove('on2')
+                        })
+                        tabCon1List[num].classList.add('on2')
+                        tabCon1List[index].classList.add('on')
+                        tabCon2List[index].classList.add('on')
+
+                        // centerImg.src = `img/tabcenter0${index+1}.png`;
+
+                        console.log('num 변경전값',num)
+                        num = index;
+                        centerImg[num].classList.add('on')
+
+                        console.log('num 변경후값',num)
+
+                    });
+                });
+
+                let previousTab = null;
+
+                tabMenuList.forEach(function(e, index) {
+                e.addEventListener('click', function() {
+                        this.classList.add('active');
+                        if (previousTab !== null) {
+                        previousTab.classList.remove('z-index1');
+                        }
+                        this.classList.add('z-index1');
+                        tabCon1List[num].classList.remove('on');
+                        tabCon1List[index].classList.add('on');
+                        previousTab = this;
+                        num = index;
+                    });
+                });
+            </script>
+            <div class="marqueeBox">
+                <div class="marquee">
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+
+                </div>
+                <div class="marquee marquee2">
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+                    <span><img src="img/se.log" alt="">매장에서 직접 구워 맛있는 코딩쿠키</span>
+                </div>
+            </div><!--marqueeBox : END-->
+        </section><!--section2 : END-->
+
+        <section class="section3">
+            <div class="inner">
+                <h3>추천 레시피</h3>
+                <p class="p">도르트문트가 제안하는 레시피로 최고의 순간을 만들어 보세요.</p>
+                <div class="left_recipe">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p><img src="img/recipe01.jpg" alt=""></p>
+                                <dl>
+                                    <dt>#요리초보 #요린이 #봄</dt>
+                                    <dd>봄 된장 비빔밥</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="img/recipe02.jpg" alt=""></p>
+                                <dl>
+                                    <dt>#갈릭아이올리 #계란요리 #브런치</dt>
+                                    <dd>에그마요 샌드위치</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="img/recipe03.jpg" alt=""></p>
+                                <dl>
+                                    <dt>#열라면 #투움바 #프레스코</dt>
+                                    <dd>열라면 투움바</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--left_recipe : END-->
+                <div class="right_recipe">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p><img src="img/recipe04.jpg" alt=""></p>
+                                <dl>
+                                    <dt>#열라면 #돈까스 #돈까스김치나베</dt>
+                                    <dd>돈까스 김치나베 </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="img/recipe05.jpg" alt=""></p>
+                                <dl>
+                                    <dt>#딸기 #케이크 #핫케이크믹스</dt>
+                                    <dd>에그마요 샌드위치</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="img/recipe06.jpg" alt=""></p>
+                                <dl>
+                                    <dt>#볶음밥X라조장 #계란요리 #치즈듬뿍</dt>
+                                    <dd>한라산 볶음밥</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--right_recipe : END-->
+            </div><!--inner : END-->
+        </section><!--section3 : END-->
+
+        <section class="section4">
+            <h3>셰프의 팁 간편식 업그레이드</h3>
+            <p class="p">우리가 제안하는 간편식이 근사한 요리가 되는 팁을 공개합니다.</p>
+            <div class="upgrade_slide">
+                <div class="swiper upgradeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/upimg01.jpg" alt="">
+                            <div class="txt">
+                                <span>#냉동피자X초콜릿</span>
+                                <span>#바나나</span>
+                                <span>#단짠단짠</span>
+                                <a href=""><h4>초콜릿피자</h4></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/upimg02.jpg" alt="">
+                            <div class="txt">
+                                <span>#XO만두</span>
+                                <span>#굴림만두</span>
+                                <span>#캠핑</span>
+                                <a href=""><h4>완자꼬치</h4></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/upimg03.jpg" alt="">
+                            <div class="txt">
+                                <span>#볶음밥X라조장</span>
+                                <span>#계란요리</span>
+                                <span>#치즈듬뿍</span>
+                                <a href=""><h4>한라산볶음밥</h4></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/recipe04.jpg" alt="">
+                            <div class="txt">
+                                <span>#열라면</span>
+                                <span>#돈까스</span>
+                                <span>#돈까스 김치나베</span>
+                                <a href=""><h4>돈까스 김치나베</h4></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/recipe05.jpg" alt="">
+                            <div class="txt">
+                                <span>#딸기</span>
+                                <span>#케이크</span>
+                                <span>#핫케이크믹스</span>
+                                <a href=""><h4>딸기케이크</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next_prev">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <!-- <div class="swiper-pagination kiz"></div> -->
+                </div><!--mySwiper : END-->
+            </div><!--upgrade_slide : END-->
+            <div class="upgrade_btn">
+                <button>더보기</button>
+            </div>
+            
+        </section><!--section4 : END-->
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <section class="section5">
+            <div class="inner">
+                <h3>인기 음식들</h3>
+                <p class="p">푸디박스에서 많은 분들이 찾아본 인기 레시피를 소개합니다.</p>
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="img" ><img src="img/foodList01.jpg"  alt=""><div class="icon"><span>추천</span><span>인기</span></div></div>
+                            <div class="txt">
+                                <span>#덮밥요리 #푸디박스햄 #골드마요네스</span>
+                                <h4>햄마요덮밥</h4>
+                            </div><!--txt : END-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img"><img src="img/foodList02.jpg" alt=""><div class="icon"><span>추천</span><span>인기</span></div></div>
+                            <div class="txt">
+                                <span>#파스타샐러드 #키즈셰프 #토마토퓨레</span>
+                                <h4>토마토 냉파스타</h4>
+                            </div><!--txt : END-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img"><img src="img/foodList03.jpg" alt=""><div class="icon"><span>추천</span><span>인기</span></div></div>
+                            <div class="txt">
+                                <span>#치즈듬뿍 #단짠단짠 #골드마요네스</span>
+                                <h4>콘치즈</h4>
+                            </div><!--txt : END-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img"><img src="img/foodList04.jpg" alt=""><div class="icon"><span>추천</span><span>인기</span></div></div>
+                            <div class="txt">
+                                <span>#3일숙성카레 #카레맛집 #쇠고기</span>
+                                <h4>카레 비프 스튜</h4>
+                            </div><!--txt : END-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img"><img src="img/foodList05.jpg" alt=""><div class="icon"><span>추천</span><span>인기</span></div></div>
+                            <div class="txt">
+                                <span>#셰프의팁 #즉석국 #캠핑</span>
+                                <h4>차돌박이 된장찌개</h4>
+                            </div><!--txt : END-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img"><img src="img/foodList06.jpg" alt=""><div class="icon"><span>추천</span><span>인기</span></div></div>
+                            <div class="txt">
+                                <span>#셰프의팁 #즉석국 #집밥</span>
+                                <h4>육개장 칼국수</h4>
+                            </div><!--txt : END-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img"><img src="img/foodList07.jpg" alt=""><div class="icon"><span>추천</span><span>인기</span></div></div>
+                            <div class="txt">
+                                <span>#집밥 #밑반찬 #꿀유자차</span>
+                                <h4>유자 연근조림</h4>
+                            </div><!--txt : END-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img"><img src="img/foodList08.jpg" alt=""><div class="icon"><span>추천</span><span>인기</span></div></div>
+                            <div class="txt">
+                                <span>#갈릭아이올리 #계란요리 #브런치</span>
+                                <h4>에그마요 샌드위치</h4>
+                            </div><!--txt : END-->
+                        </a>
+                    </li>
+                </ul>
+                <button class="star_food_btn">인기 음식들 더보기</button>
+                <script>
+                    AOS.init();
+                </script>
+            </div><!--inner : END-->
+        </section><!--section5 : END-->
+
+        <section class="section6">
+            <div class="txt">
+				<h3><span class="red">향신료의 매력에 푹 빠지고 싶다면?</span><br>
+					허브·스파이스 전문 도서관<br>
+					<span class="f43">라이브러리 H</span>
+				</h3>
+				<button class="btn btn-white" >자세한 이용 방법 보기</button>
+			</div>
+        </section><!--section6 : END-->
+
+    </main>
+    <footer>
+        <div class="top">
+            <div class="inner">
+                <ul>
+                    <li><a href="">인기 음식점</a></li>
+                    <li><a href="">네이밍의 팁</a></li>
+                    <li><a href="">신규 점포</a></li>
+                </ul>
+            </div><!--inner : END-->
+        </div><!--top: END-->
+        <div class="bottom">
+            <div class="inner">
+                <p>(주)푸디박스<span>경기도 시흥시 도창동 184번지</span></p>
+                <strong>Copyright ⓒ ottogi co.,Ltd All Rights Reserved.</strong>
+            </div><!--inner : END-->
+        </div><!--bottom : END-->
+    </footer>
+    <div class="topBtn"><i class="fa-solid fa-chevron-up"></i>TOP</div>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

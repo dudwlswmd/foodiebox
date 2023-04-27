@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <title>Document</title>
+</head>
+<body>
+     <div class="upgrade_slide">
+          <div class="swiper upgradeSwiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="img/upimg01.jpg" alt="">
+                      <div class="txt">
+                          <h4>옥수수푸딩</h4>
+                          <p>#옥수수푸딩 #콘스프</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="img/upimg02.jpg" alt="">
+                      <div class="txt">
+                          <h4>옥수수푸딩</h4>
+                          <p>#옥수수푸딩 #콘스프</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="img/upimg03.jpg" alt="">
+                      <div class="txt">
+                          <h4>옥수수푸딩</h4>
+                          <p>#옥수수푸딩 #콘스프</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="img/recipe04.jpg" alt="">
+                      <div class="txt">
+                          <h4>옥수수푸딩</h4>
+                          <p>#옥수수푸딩 #콘스프</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="img/recipe05.jpg" alt="">
+                      <div class="txt">
+                          <h4>옥수수푸딩</h4>
+                          <p>#옥수수푸딩 #콘스프</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="next_prev">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+              </div>
+              <!-- <div class="swiper-pagination kiz"></div> -->
+          </div><!--mySwiper : END-->
+      </div><!--bu : END-->
+      <script>
+          var upgradeSwiper = new Swiper(".upgradeSwiper", {
+              loop: true, // 무한반복 여부
+              // loopAdditionalSlides : 1,
+              slidesPerView: 3,
+              spaceBetween: 0,
+              // pagination: {
+              //     el: ".swiper-pagination",
+              //     type: "fraction",
+              // },
+              navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+              },
+          });
+      </script>
+</body>
+</html>
