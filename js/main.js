@@ -2,7 +2,7 @@ let startIdx = 0;
 let endIdx = 4;
 const starFoodBtn = document.querySelector('.star_food_btn');
 starFoodBtn.addEventListener('click', function() {
-     fetch('../data.json')
+     fetch('https://dudwlswmd.github.io/foodiebox/data.json')
      .then(response => response.json())
      .then(data => {
           const obj = Object.values(data.data);
