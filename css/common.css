@@ -112,6 +112,7 @@ right:-20px;
 .conWra{float: left;width: 65%;height: 100%;}
 .subTabMenuCon{}
 .subTabMenuCon li{}
+/* .subTabMenuCon .conWra ul:first-child a{display: block;padding: 1px 0;} */
 .subTabMenuCon li a{display: block;padding: 5px 0;}
 
 

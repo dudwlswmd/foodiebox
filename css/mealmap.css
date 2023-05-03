@@ -20,7 +20,7 @@ main {
   background: url('../img_mealmap/전국맛집지도_배너.png')no-repeat center center / contain;
 }
 .pc_map img {
-  width: 100%;
+  width: 50%;
 }
 /* 모바일용 830px */
 .mo_map {
