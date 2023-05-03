@@ -22,7 +22,7 @@
     <header>
         <div class="h_top">
             <div class="inner">
-                <h1><img src="logo/foodiebox.svg" alt="">메인로고</h1>
+                <h1><a href="index.html"><img src="logo/foodiebox.svg" alt="">메인로고</a></h1>
                 <div class="gnb_sch_form">
                     <form name="h_form" id="h_form" action="">
                         <input type="text" name="s_value" id="s_value" value="" maxlength="30" 
@@ -299,7 +299,7 @@
                             <span>#베이컨</span>
                             
                                 </div>
-                                <div class="info_title"><a onclick="view(3)" href="#">고사리 갈릭볶음밥</a></div>
+                                <div class="info_title"><a  href="#">고사리 갈릭볶음밥</a></div>
                             </div>
                         </li>
                     
@@ -738,13 +738,40 @@
 
         <script>
             var swiper = new Swiper('.detail', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            slidesPerGroup: 4,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+                slidesPerView: 4,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }, 
+                // 화면의 넓이가 1500px 이상일 때
+                breakpoints: {
+                    // 화면의 넓이가 1500px 이상일 때
+                    840: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                    },
+                    830: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    slidesPerGroup: 1,
+
+                    },
+                    600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    slidesPerGroup: 1,
+
+                    },    
+
+                    100: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    slidesPerGroup: 1,
+
+                    },
+                }
 
             });
         </script>
@@ -770,6 +797,6 @@
         </div><!--bottom : END-->
     </footer>
     <div class="topBtn"><i class="fa-solid fa-chevron-up"></i>TOP</div>
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
 </body>
 </html>

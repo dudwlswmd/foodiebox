@@ -46,7 +46,7 @@ section{display: inline-block !important;width: 100%;;}
 /*-------------------헤더 부분 시작------------------------*/
 header{position: relative;width:100%;height: auto;}
 .h_top{position: relative;width: 100%;height: 105px;box-sizing: border-box;z-index: 13;background: linear-gradient(to right, #bf132b, #f64646);}
-header h1{font-size:0;overflow: hidden;float: left;width: 240px;height: 100%;}
+header h1{font-size:0;overflow: hidden;float: left;width: 240px;height: 100%;margin-left:-30px;}
 h1 img  {  width: 100%;padding-top: 8px;}
 .gnb_sch_form{float: left;position: relative;padding-left:8%;line-height:105px;}
 .gnb_sch_form input{
@@ -228,7 +228,7 @@ footer .top ul{width: 100%;}
 footer .top ul li {float: left;}
 footer .top ul li a{display: block;color: #fff;padding: 0 20px 0 0;line-height: 40px;}
 footer .bottom{width: 100%;height: 80px;background: #bf132b;}
-footer .bottom p{font-size:17px;font-weight: bold;position: relative;top: 20px;}
+footer .bottom p{font-size:14px;font-weight: bold;position: relative;top: 20px;}
 footer .bottom p span{display: block;margin-top: 5px;}
 footer .bottom strong{margin: 5px 0; float: right;}
 footer .bottom{}
@@ -247,13 +247,20 @@ footer .bottom{}
 
 
 
+
+
+
+
+
+
+
 /* 반응형 */
 
 
 @media screen and (max-width:1300px) {
 
      .inner,.h_top{width: 100%;padding:0 20px;}
-
+     .gnb{width: 50%;}
      .gnb_sch_form input{width: 363px;}
      .visual {height: auto;}
      .visual .swiper-slide a img{width: 100%;}
@@ -268,7 +275,7 @@ footer .bottom{}
      
      .tabCon2 > li div dt{font-size:1.5em}
      .tabCon2 > li div dt {margin-top: 80px;}
-
+     .section1 .section1_left ul{width: 95%;}
      .kiz_slide .kizSwiper .swiper-wrapper .swiper-slide .txt h4{margin-top: 10px;}
      .section1 .section1_right .content3 {
           background: url(../img/img2.jpg) no-repeat center;}
@@ -282,6 +289,7 @@ footer .bottom{}
 
 
 @media screen and (max-width:1100px) {
+     .gnb{width: auto;}
      .h_top ul{display: none;}
 
      .gnb_sch_form {
@@ -338,8 +346,10 @@ footer .bottom{}
           margin-top: -5px;
           box-shadow: rgba(50, 50, 93, 0.01) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px, rgba(10, 37, 64, 0.1) 0px -2px 6px 0px inset;
      }
-
+     .web{display: none;}
+     .mobile{display: block;}
      .visual .swiper-slide a .txt {
+          display: none;
           top: -13%;
           left: -7%;
           transform: scale(0.59);
@@ -425,7 +435,7 @@ footer .bottom{}
           width: 105px;padding: 0;
      }
      .subTabMenu li a{font-size:16px;}
-     .slider .slide_tit > li span{font-size:14px;}
+     .slider .slide_tit > li strong{font-size:14px;}
      .section1 .section1_right .content1{float: none;    padding: 20px 0 40px;}
      .section1 .section1_right{display: inherit;}
      .kiz_slide img {
@@ -434,7 +444,7 @@ footer .bottom{}
      .section1 .section1_right > div{width: 100%;;}
      .section1 .section1_right > div h3{font-size:30px;}
      .kiz_slide .swiper-button-next, .kiz_slide .swiper-button-prev{width: 50px;;}
-     .kiz .swiper-android .swiper-slide, .swiper-wrapper{padding-bottom: 30px;}
+     .kiz .swiper-android .swiper-slide, .swiper-wrapper{padding-bottom: 0px;}
      .section1 .section1_right .content2{padding: 20px 0;}
      .section1 .section1_right .content3{display: none;}
      .tabCon1, .tabCon2{height: 450px;}
@@ -467,7 +477,7 @@ footer .bottom{}
           top: -40%;
           left: -20%;
      }
-     .slider .slide_tit > li span{font-size:12px;}
+     .slider .slide_tit > li strong{font-size:12px;}
      .tabCon1, .tabCon2 {
           height: 400px;
      }
@@ -534,9 +544,12 @@ footer .bottom{}
 
 }
 
-
-
-
+@media screen and (max-width:400px) {
+     .gnb > li:nth-child(1) .bar{margin-right:0px;}
+     .gnb > li {
+          padding: 0 8px;
+     }
+}
 
 
 

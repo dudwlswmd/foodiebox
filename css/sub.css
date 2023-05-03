@@ -31,6 +31,8 @@ text-align: center;
 margin: 80px 0 50px;
 }
 .section5 .p span a{    font-size: 20px;
+     display: inline-block;
+     margin-bottom:20px;
      line-height: 25px;
      color: #777777;
      padding: 5px 20px 7px;
@@ -109,7 +111,7 @@ margin: 80px 0 50px;
 .detailBody .detailRight .relative .thmb_list01 .img{width:100%; height: 100%; overflow: hidden;}
 .detailBody .detailRight .relative .thmb_list01 .img img{width:305px; height: 215px;}
 .detailBody .detailRight .relative .thmb_list01 .thmb .icon{position: absolute; right:20px; bottom: 0; z-index: 2; text-align: right; width:80%; height: 48px;}
-.detailBody .detailRight .relative .thmb_list01 .thmb .icon i{width:48px; height: 48px; background: url('../images/common/list_icon.png')no-repeat; content: ''; display: inline-block; font-size: 0; margin-left: 7px;}
+.detailBody .detailRight .relative .thmb_list01 .thmb .icon i{width:48px; height: 48px; background: url('https://ottogi.okitchen.co.kr/images/common/list_icon.png')no-repeat; content: ''; display: inline-block; font-size: 0; margin-left: 7px;}
 .detailBody .detailRight .relative .thmb_list01 .thmb .icon .icon_dm{background-position: top;}
 .detailBody .detailRight .relative .thmb_list01 .thmb .icon .icon_best{background-position: bottom}
 .detailBody .detailRight .relative .thmb_list01 .info{padding:30px 0 10px; }
@@ -120,7 +122,7 @@ margin: 80px 0 50px;
 
 
 /* 레시피 상세보기 */
-.detailTop{background: #f3f3f3 url('../images/category/detail_bg.png') repeat-x; background-position:0 60%; text-align: center; max-height: 695px; height: 100%;}
+.detailTop{background: #f3f3f3 url('https://ottogi.okitchen.co.kr/images/category/detail_bg.png') repeat-x; background-position:0 60%; text-align: center; max-height: 695px; height: 100%;}
 .detailBody{position: relative; display: table; vertical-align: top;}
 .detailBody:after{width:1px; height:calc(100% - 375px); background: #b7b7b7; display: block;content: ''; position: absolute; top:375px; left:880px;} 
 .detailBody .detailInfo{position: relative; float: left; width:820px; margin-right:60px;}
@@ -257,8 +259,8 @@ margin: 80px 0 50px;
    .thmb_list02 .thmb{position: relative;width:100%; }
    .thmb_list02 .img{width:100%; height: 100%; overflow: hidden;}
    .thmb_list02 .img img{width:305px; height: 215px;}
-   .thmb_list02 .thmb .icon{position: absolute; right:20px; bottom: 0; z-index: 2; text-align: right; width:80%; height: 48px;}
-   .thmb_list02 .thmb .icon i{width:48px; height: 48px; background: url('../images/common/list_icon.png')no-repeat; content: ''; display: inline-block; font-size: 0; margin-left: 7px;}
+   .thmb_list02 .thmb .icon{position: absolute; right:20px; bottom: -24px; z-index: 2; text-align: right; width:80%; height: 48px;}
+   .thmb_list02 .thmb .icon i{width:48px; height: 48px; background: url('https://ottogi.okitchen.co.kr/images/common/list_icon.png')no-repeat; content: ''; display: inline-block; font-size: 0; margin-left: 7px;}
    .thmb_list02 .thmb .icon .icon_dm{background-position: top;}
    .thmb_list02 .thmb .icon .icon_best{background-position: bottom}
    .thmb_list02 .info{padding:30px 0 10px; }
@@ -293,7 +295,61 @@ margin: 80px 0 50px;
 
 
 
+@media screen and (max-width:1310px) {
 
+     .inner,.h_top{width: 100%;padding:0 20px;}
+
+     .gnb_sch_form input{width: 363px;}
+     .visual {height: auto;}
+     .visual .swiper-slide a img{width: 100%;}
+     .visual .swiper-slide a .txt {top: 7%;left: 5%;transform: scale(0.8);}
+     .slide_tit.slide_dot{width: 100% !important;}
+
+     .tabMenu h3 {font-size: 3rem;}
+     .tabCon2 > li div h3 {font-size: 2.5rem;}
+
+     .tabCon2 > li {padding: 15% 5% 0;}
+     .center_img{width: 300px;top:40%;}
+     
+     .tabCon2 > li div dt{font-size:1.5em}
+     .tabCon2 > li div dt {margin-top: 80px;}
+     .section1 .section1_left ul{width: 95%;}
+     .kiz_slide .kizSwiper .swiper-wrapper .swiper-slide .txt h4{margin-top: 10px;}
+     .section1 .section1_right .content3 {
+          background: url(../img/img2.jpg) no-repeat center;}
+
+          .section4 .upgradeSwiper .next_prev {
+               width: 85%;
+               top: -200px;
+          }
+     .section6 .txt{width: 100%;}
+
+     .container{width: 100%;min-width: auto;}
+     .detailTop img{width: 100%;}
+     #contents{width: 100%;min-width: auto;}
+     .detailBody .detailInfo{width:100%;margin-right: 0;}
+     .detailBody .detailRight{width:100%}
+     .content{width:100%;padding: 0 20px;display: block;}
+     .detail{width:95%}
+
+     .detailBody .detailInfo p{text-align: center !important;font-size: 18px;}
+     .detailBody .detailInfo p img{width: 100%;}
+     .detailBody .detailInfo .ContentArea{text-align: center;}
+     .detailBody:after{display: none;}
+     .detailBody .detailRight .recipe-stats{width:100%;min-height: auto;padding: 40px 0;}
+
+     .detailBody .detailRight h3{text-align: center;}
+     .detailBody .detailRight .relative .thmb_list01 .img img{width: 90%;height: auto;}
+     .item01 > li .img img{width: 100%;}
+     .detailBody .detailRight .made-item ul{width: 100%;}
+     .detailBody .detailRight .made-item li{width:100%}
+     .detailBody .detailRight .relative .thmb_list01 li{float: none;width: 100%;}
+     .detailBody .detailRight .relative .thmb_list01{width: 100%;display: inline-block;}
+     .item01 > li > .img{width:100%}
+     .detail .thmb_list02 .item{width: 100%;height: auto;}
+     .thmb_list02 .img {width: 100%;height: auto;}
+     .thmb_list02 .img img{width: 100%;height: auto;}
+     }
 
 
 

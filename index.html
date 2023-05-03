@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
     <!-- <link rel="icon" href="파비콘로고넣는곳" type="image/x-icon">  -->
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+
     <link rel="stylesheet" href="css/reset.css">
     <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -584,6 +585,68 @@
                         num = index;
                     });
                 });
+
+                // const tabMenuList = document.querySelectorAll('.tabMenu ul li');  // 탭 메뉴의 리스트를 선택하는 코드입니다.
+                // const tabCon1List = document.querySelectorAll('.tabCon1 > li');  // 탭 내용 1의 리스트를 선택하는 코드입니다.
+                // const tabCon2List = document.querySelectorAll('.tabCon2 > li');  // 탭 내용 2의 리스트를 선택하는 코드입니다.
+                // const centerImgBu = document.querySelector('.center_img ');  // 탭 내용의 중앙 이미지를 선택하는 버튼 엘리먼트를 선택하는 코드입니다.
+                // const centerImg = document.querySelectorAll('.center_img img');  // 탭 내용의 중앙 이미지를 선택하는 이미지 엘리먼트를 선택하는 코드입니다.
+
+                // let num = 0;  // 초기값 0으로 설정되는 변수 num입니다.
+
+                // // 탭 메뉴 리스트의 각 항목을 선택하여 클릭 이벤트를 등록합니다.
+                // tabMenuList.forEach(function(e,index){
+                //     e.addEventListener('click',function(){
+                //         this.classList.add('active');  // 클릭된 탭 메뉴에 .active 클래스를 추가합니다.
+                //         centerImg[num].classList.remove('on')  // 기존에 선택된 중앙 이미지의 .on 클래스를 제거합니다.
+
+                //         tabMenuList[num].classList.remove('active')  // 이전에 선택된 탭 메뉴에서 .active 클래스를 제거합니다.
+                //         tabCon1List[num].classList.remove('on')  // 이전에 선택된 탭 내용 1에서 .on 클래스를 제거합니다.
+                //         tabCon2List[num].classList.remove('on')  // 이전에 선택된 탭 내용 2에서 .on 클래스를 제거합니다.
+
+                //         tabCon1List.forEach(function(element){
+                //             element.classList.remove('on2')  // 탭 내용 1의 모든 리스트에서 .on2 클래스를 제거합니다.
+                //         })
+                //         tabCon1List[num].classList.add('on2')  // 선택된 탭 내용 1에 .on2 클래스를 추가합니다.
+                //         tabCon1List[index].classList.add('on')  // 클릭된 탭 내용 1에 .on 클래스를 추가합니다.
+                //         tabCon2List[index].classList.add('on')  // 클릭된 탭 내용 2에 .on 클래스를 추가합니다.
+
+                //         num = index;  // 클릭된 탭 메뉴의 인덱스를 변수 num에 저장합니다.
+                //         centerImg[num].classList.add('on')  // 선택된 중앙 이미지에 .on 클래스를 추가합니다.
+
+                //     });
+                // });
+
+                // let previousTab = null;  // 이전 탭 메뉴의 엘리먼트를 저장하는 변수 previousTab입니다.
+
+                // // 탭 메뉴 리스트의 각 항목을 선택하여 클릭 이벤트를 등록합니다.
+                // tabMenuList.forEach(function(e, index) {
+                // // 각 탭 메뉴 요소에 클릭 이벤트 리스너를 등록합니다.
+                //     e.addEventListener('click', function() {
+                //         // 현재 클릭한 탭 메뉴에 'active' 클래스를 추가합니다.
+                //         this.classList.add('active');
+                        
+                //         // 이전에 선택한 탭 메뉴 요소에 'z-index1' 클래스를 제거합니다.
+                //         if (previousTab !== null) {
+                //         previousTab.classList.remove('z-index1');
+                //         }
+                        
+                //         // 현재 클릭한 탭 메뉴에 'z-index1' 클래스를 추가합니다.
+                //         this.classList.add('z-index1');
+                        
+                //         // 이전에 선택한 탭 메뉴에서 보여지는 콘텐츠 요소를 제거합니다.
+                //         tabCon1List[num].classList.remove('on');
+                        
+                //         // 현재 클릭한 탭 메뉴에서 보여지는 콘텐츠 요소를 추가합니다.
+                //         tabCon1List[index].classList.add('on');
+                        
+                //         // 이전에 선택한 탭 메뉴 요소를 기억합니다.
+                //         previousTab = this;
+                        
+                //         // 현재 선택한 탭 메뉴 인덱스를 기억합니다.
+                //         num = index;
+                //     });
+                // });
             </script>
             <div class="marqueeBox">
                 <div class="marquee">

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  <!-- <link rel="icon" href="img/logo-bvb.svg" type="image/x-icon">  -->
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/mealmap.css">
+  <link rel="stylesheet" href="css/common.css">
+
+  <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- <script src="js/swiper.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  <link rel="stylesheet" href="slick/slick-themeb.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="slick/slick.js" type="text/javascript"></script>
+
+  <title>전국맛집지도</title>
+
+</head>
+<body class="scroll_bar">
+  <header>
+    <div class="h_top">
+        <div class="inner">
+            <h1><a href="index.html"><img src="logo/foodiebox.svg" alt="">메인로고</a></h1>
+            <div class="gnb_sch_form">
+                <form name="h_form" id="h_form" action="">
+                    <input type="text" name="s_value" id="s_value" value="" maxlength="30" 
+                    placeholder="제품, 요리명 등 다양하게 검색해보세요!(예: 밀키트)" 
+                    title="검색어를 입력해주세요.">
+                    <label for="">
+                        <a href="" class="btn_sch"><img src="img/top_sch.png" alt="검색"></a>
+                    </label>
+                </form>
+            </div><!--gnb_sch_form : END-->
+            <ul>
+                <li><a href="">라면맛집</a></li>
+                <li><a href="">XO만두</a></li>
+            </ul>
+        </div><!--inner : END-->
+    </div><!--h_top : END-->
+    <nav>
+        <div class="inner">
+            <ul class="gnb">
+                <li class="gnb_menu">
+                    <p class="bar"><span></span></p>
+                    <a>카테고리</a>
+                    <div class="gnb_sub">
+                        <ul class="subTabMenu">
+                            <li><a href="">배달</a></li>
+                            <li><a href="">픽업/홀</a></li>
+                            <li><a href="">밀키트</a></li>
+                            <li><a href="">마트</a></li>
+                            <li><a href="">선물하기</a></li>
+                        </ul><!--subTabMenu : END-->
+                        <div class="conWra">
+                            <ul class="subTabMenuCon on">
+                                <li><a href="">1인분</a></li>
+                                <li><a href="">치킨</a></li>
+                                <li><a href="">피자</a></li>
+                                <li><a href="">한식</a></li>
+                                <li><a href="">중식/아시안</a></li>
+                                <li><a href="">일식/돈까스/회</a></li>
+                                <li><a href="">양식</a></li>
+                                <li><a href="">족발/보쌈</a></li>
+                                <li><a href="">고기/구이</a></li>
+                                <li><a href="">분식</a></li>
+                                <li><a href="">페스트푸드</a></li>
+                                <li><a href="">카페.디저트</a></li>
+                            </ul><!--subTabMenuCon : END-->
+                            <ul class="subTabMenuCon">
+                                <li><a href="">미리 주문하고 포장하기</a></li>
+                                <li><a href="">미리 주문하고 홀에서 식사</a></li>
+                            </ul><!--subTabMenuCon : END-->
+                            <ul class="subTabMenuCon">
+                                <li><a href="">#전국맛집지도</a></li>
+                                <li><a href="">밀키트 기획전</a></li>
+                                <li><a href="">간편/메인요리</a></li>
+                                <li><a href="">데일리 반찬</a></li>
+                                <li><a href="">밥/도시락/면</a></li>
+                                <li><a href="">국/탕/찌개</a></li>
+                                <li><a href="">구이/볶음/찜</a></li>
+                                <li><a href="">안주/야식</a></li>
+                                <li><a href="">간식/음료</a></li>
+                                <li><a href="">식단/건강관리</a></li>
+                            </ul><!--subTabMenuCon : END-->
+                            <ul class="subTabMenuCon">
+                                <li><a href="">이달의 신상템</a></li>
+                                <li><a href="">베스트셀러</a></li>
+                                <li><a href="">타임세일</a></li>
+                                <li><a href="">맛있는 것 - </a></li>
+                                <li><a href="">편리한 것 - </a></li>
+                                <li><a href="">기획전</a></li>
+                            </ul><!--subTabMenuCon : END-->
+                            <ul class="subTabMenuCon">
+                                <li><a href="">선물하기 바로가기</a></li>
+                            </ul><!--subTabMenuCon : END-->
+                        </div><!--conWra : END-->
+                    </div><!--gnb_sub : END-->
+                </li>
+                <li><a href="">이벤트 / 쿠폰</a></li>
+                <li><a href="">인기 레시피</a></li>
+                <li><a href="">신규점포</a></li>
+            </ul><!--gnb : END-->
+            <ul class="nav_gnb_r">
+                <li><a href="">기업형몰</a></li>
+                <li><a href="">최근 본 레시피</a></li>
+            </ul><!--nav_gnb_r : END-->
+        </div><!--inner : END-->
+    </nav>
+</header>
+
+  <main>
+    <section class="map_banner">
+      <div class="pc_map">
+        <a href="#">
+          <img src="img_mealmap/전국맛집지도_배너.png" alt="">
+        </a>
+      </div>
+      <div class="mo_map">
+        <a href="#">
+          <img src="img_mealmap/전국맛집지도_배너_mo.png" alt="">
+        </a>
+      </div>
+    </section>
+
+    <div class="btn seoul">
+      <h1># 서울 / 경기</h1>
+    </div>
+
+    <section class="section_1">
+      <div class="slider">
+          <div class="wrapppp">
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/의정부오뎅식당1.png" alt="의정부오뎅식당">
+                </a>
+                <p class="set_name">[의정부]오뎅식당</p>
+                <a href="#" class="h_price">
+                  <p>18,000원</p>
+                </a>
+                <p class="w_price">20,000원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/성남들깨수제비.jpg" alt="성남들깨수제비">
+                </a>
+                <p class="set_name">[성남]미가들깨수제비</p>
+                <a href="#" class="h_price">
+                  <p>15,900원</p>
+                </a>
+                <p class="w_price">18,000원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/남대문금성관.jpg" alt="남대문금성관나주곰탕">
+                </a>
+                <p class="set_name">[남대문]금성관 나주곰탕</p>
+                <a href="#" class="h_price">
+                  <p>11,900원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/신천해주냉면.jpg" alt="신천해주냉면">
+                </a>
+                <p class="set_name">[신천]해주불냉면 2인분</p>
+                <a href="#" class="h_price">
+                  <p>10,900원</p>
+                </a>
+                <p class="w_price">12,000원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/고기리들기름막국수.jpg" alt="고기리들기름막국수">
+                </a>
+                <p class="set_name">[용인]고기리들기름막국수</p>
+                <a href="#" class="h_price">
+                  <p>12,890원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/망원동육라면.jpg" alt="망원동육라면">
+                </a>
+                <p class="set_name">[망원동]육장:육라면 2인분</p>
+                <a href="#" class="h_price">
+                  <p>16,000원</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="banner_btn">
+      <a href="#">
+        + 더보기
+      </a>
+    </div>
+
+    <div class="btn gangwon">
+      <h1># 강원도</h1>
+    </div>
+
+    <section class="section_1">
+      <div class="slider">
+          <div class="wrapppp">
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/춘천닭갈비.jpg" alt="원조춘천닭갈비">
+                </a>
+                <p class="set_name">[춘천]원조춘천닭갈비</p>
+                <a href="#" class="h_price">
+                  <p>11,900원</p>
+                </a>
+                <p class="w_price">13,900원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/강릉짬뽕순두부.jpg" alt="강릉짬뽕순두부">
+                </a>
+                <p class="set_name">[강릉]짬뽕순두부</p>
+                <a href="#" class="h_price">
+                  <p>12,380원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/강원도감자옹심이칼국수.jpeg" alt="강원도감자옹심이칼국수">
+                </a>
+                <p class="set_name">[강원]감자옹심이칼국수</p>
+                <a href="#" class="h_price">
+                  <p>5,300원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/속초홍게라면.jpg" alt="속초홍게라면">
+                </a>
+                <p class="set_name">[속초]중앙시장-홍게라면</p>
+                <a href="#" class="h_price">
+                  <p>20,480원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/속초황태해장국.jpg" alt="속초황태해장국">
+                </a>
+                <p class="set_name">[속초]황태해장국</p>
+                <a href="#" class="h_price">
+                  <p>13,900원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/강릉장칼국수.jpg" alt="강릉장칼국수">
+                </a>
+                <p class="set_name">[강릉]장칼국수 2인분</p>
+                <a href="#" class="h_price">
+                  <p>14,000원</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="banner_btn">
+      <a href="#">
+        + 더보기
+      </a>
+    </div>
+
+    <div class="btn chungcheong">
+      <h1># 충청도</h1>
+    </div>
+
+    <section class="section_1">
+      <div class="slider">
+          <div class="wrapppp">
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/논산수제갈비탕.jpg" alt="논산수제갈비탕">
+                </a>
+                <p class="set_name">[논산]초가집갈비:수제갈비탕</p>
+                <a href="#" class="h_price">
+                  <p>10,000원</p>
+                </a>
+                <p class="w_price">13,000원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/천어담어탕국수.jpeg" alt="천어담어탕국수">
+                </a>
+                <p class="set_name">[충청]천어담어탕국수</p>
+                <a href="#" class="h_price">
+                  <p>17,800원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/충청도꽃게탕.jpg" alt="충청도꽃게탕">
+                </a>
+                <p class="set_name">[안면도]게국지:꽃게탕2인분</p>
+                <a href="#" class="h_price">
+                  <p>25,900원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/충청도동태탕.jpeg" alt="충청도동태탕">
+                </a>
+                <p class="set_name">[충청]임가네해물촌:동태탕</p>
+                <a href="#" class="h_price">
+                  <p>23,500원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/홍게해신탕.jpeg" alt="홍게해신탕">
+                </a>
+                <p class="set_name">[충청]홍게해신탕 3인분</p>
+                <a href="#" class="h_price">
+                  <p>36,900원</p>
+                </a>
+                <p class="w_price">69,000원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/충청도생태찌개.jpg" alt="충청도생태찌개">
+                </a>
+                <p class="set_name">[충청]송가네 생태찌개</p>
+                <a href="#" class="h_price">
+                  <p>15,900원</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="banner_btn">
+      <a href="#">
+        + 더보기
+      </a>
+    </div>
+
+    <div class="btn gyeongsang">
+      <h1># 경상도</h1>
+    </div>
+
+    <section class="section_1">
+      <div class="slider">
+          <div class="wrapppp">
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/부산복어탕.jpeg" alt="부산복어탕">
+                </a>
+                <p class="set_name">[부산]53년전통:까치복매운탕</p>
+                <a href="#" class="h_price">
+                  <p>22,000원</p>
+                </a>
+                <p class="w_price">25,000원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/화명동떡볶이.jpg" alt="화명동떡볶이">
+                </a>
+                <p class="set_name">[부산]화명동떡볶이</p>
+                <a href="#" class="h_price">
+                  <p>6,900원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/안동찜닭밀키트.jpg" alt="안동순살찜닭">
+                </a>
+                <p class="set_name">[안동]순살찜닭 밀키트</p>
+                <a href="#" class="h_price">
+                  <p>14,900원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/대구영래칼국수.jpg" alt="대구영래칼국수">
+                </a>
+                <p class="set_name">[대구]영래칼국수</p>
+                <a href="#" class="h_price">
+                  <p>14,500원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/대구청송삼계탕.jpg" alt="대구청송삼계탕">
+                </a>
+                <p class="set_name">[대구]청송삼계탕</p>
+                <a href="#" class="h_price">
+                  <p>18,000원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/마산아구찜.png" alt="마산아구찜">
+                </a>
+                <p class="set_name">[창원]마산아구찜</p>
+                <a href="#" class="h_price">
+                  <p>12,900원</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="banner_btn">
+      <a href="#">
+        + 더보기
+      </a>
+    </div>
+
+    <div class="btn jeolla">
+      <h1># 전라도</h1>
+    </div>
+
+    <section class="section_1">
+      <div class="slider">
+          <div class="wrapppp">
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/목포전복등갈비찜.png" alt="목포전복등갈비찜">
+                </a>
+                <p class="set_name">[목포]전복등갈비찜</p>
+                <a href="#" class="h_price">
+                  <p>28,900원</p>
+                </a>
+                <p class="w_price">30,900원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/전주남노물갈비.jpg" alt="전주남노물갈비">
+                </a>
+                <p class="set_name">[전주]남노갈비:물갈비</p>
+                <a href="#" class="h_price">
+                  <p>22,400원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/옥강집추어탕(남원).jpg" alt="옥강집추어탕">
+                </a>
+                <p class="set_name">[남원]옥강집추어탕</p>
+                <a href="#" class="h_price">
+                  <p>8,000원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/담양죽순떡갈비.jpg" alt="담양죽순떡갈비">
+                </a>
+                <p class="set_name">[담양]죽순떡갈비 2팩</p>
+                <a href="#" class="h_price">
+                  <p>32,300원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/여수돌문어상회.jpg" alt="여수돌문어상회">
+                </a>
+                <p class="set_name">[여수]돌문어상회</p>
+                <a href="#" class="h_price">
+                  <p>29,610원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/여수콩시루콩나물국밥.jpg" alt="여수콩시루콩나물국밥">
+                </a>
+                <p class="set_name">[여수]콩시루:콩나물국밥</p>
+                <a href="#" class="h_price">
+                  <p>12,000원</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="banner_btn">
+      <a href="#">
+        + 더보기
+      </a>
+    </div>
+
+    <div class="btn jeju">
+      <h1># 제주도</h1>
+    </div>
+
+    <section class="section_1">
+      <div class="slider">
+          <div class="wrapppp">
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/제주고양옥.jpeg" alt="제주고양옥">
+                </a>
+                <p class="set_name">[제주]고양옥 흑염소탕</p>
+                <a href="#" class="h_price">
+                  <p>16,000원</p>
+                </a>
+                <p class="w_price">20,000원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/제주김만복고사리육개장.jpeg" alt="제주김만복고사리육개장">
+                </a>
+                <p class="set_name">[제주]제주김만복:고사리육개장</p>
+                <a href="#" class="h_price">
+                  <p>15,000원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/제주김만복귤소바.jpeg" alt="제주김만복댕귤소바">
+                </a>
+                <p class="set_name">[제주]제주김만복:댕귤소바</p>
+                <a href="#" class="h_price">
+                  <p>22,000원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/제주도뿔소라우동.jpeg" alt="제주도뿔소라우동">
+                </a>
+                <p class="set_name">[제주]뿔소라우동</p>
+                <a href="#" class="h_price">
+                  <p>11,610원</p>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/제주도고기국수.jpeg" alt="제주도고기국수">
+                </a>
+                <p class="set_name">[제주]공주네 고기국수</p>
+                <a href="#" class="h_price">
+                  <p>14,000원</p>
+                </a>
+                <p class="w_price">15,500원</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post_setmenu">
+                <a href="#" class="set_img">
+                  <img src="img_mealmap/제주한돈돼지고기짜글이.jpeg" alt="제주한돈돼지고기짜글이">
+                </a>
+                <p class="set_name">[제주]한돈돼지고기짜글이</p>
+                <a href="#" class="h_price">
+                  <p>16,000원</p>
+                </a>
+                <p class="w_price">20,000원</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="banner_btn">
+      <a href="#">
+        + 더보기
+      </a>
+    </div>
+
+    <section class="empty">
+      <div class="em_box">
+        
+      </div>
+    </section>
+  </main>
+    
+    
+
+  <footer>
+    <div class="top">
+      <div class="inner">
+        <ul>
+          <li><a href="">인기 음식점</a></li>
+          <li><a href="">네이밍의 팁</a></li>
+          <li><a href="">신규 점포</a></li>
+        </ul>
+      </div><!--inner : END-->
+    </div><!--top: END-->
+    <div class="bottom">
+      <div class="inner">
+        <p>(주)네이밍<span>경기도 시흥시 도창동 184번지</span></p>
+        <strong>Copyright ⓒ ottogi co.,Ltd All Rights Reserved.</strong>
+      </div><!--inner : END-->
+    </div><!--bottom : END-->
+  </footer>
+  <div class="topBtn"><i class="fa-solid fa-chevron-up"></i>TOP</div>
+  <script src="js/meal.js"></script>
+  <!-- <script src="js/main.js" type="text/javascript"></script> -->
+</body>
+</html>

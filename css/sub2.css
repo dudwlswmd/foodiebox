@@ -1,0 +1,1204 @@
+main{
+    width: 100%;
+}
+
+.foodieMenu h2,
+.eventCoupon h2,
+.bestItem h2,
+.ad h2,
+.mealKitPage h2{
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #292929;
+}
+
+.foodieMenu{
+    padding: 50px 0 80px;
+}
+
+.foodieMenu h2{
+    margin-bottom: 50px;
+}
+
+.foodieMenuList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1300px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.foodieMenuItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 25%;
+}
+
+.foodieMenuItem > a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    transition: .3s;
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px 5px rgba(170, 170, 170, .1);
+}
+
+.foodieMenuItem a:hover{
+    background-color: #efefef;
+}
+
+.foodieMenuItem > a img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 7px;
+}
+
+.foodieMenuItem > a span{
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.eventCoupon{
+    padding-top: 100px;
+    width: 100%;
+    background: #f6f6f6;
+    overflow: hidden;
+}
+
+.eventCoupon h2{
+    margin-bottom: 80px;
+}
+
+.center{
+    width: 100%;
+    height: 500px;
+}
+
+.centerItem{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.centerItem a{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 100%;
+}
+
+.centerItem img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.centerItem h3{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.date{
+    position: relative;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.mt80{
+    margin-top: 80px;
+}
+
+.more{
+    display: none;
+    position: absolute;
+    right: 20px;
+    color: #777;
+    font-weight: bold;
+}
+
+.centerItem:hover .more{
+    display: block;
+}
+
+.aBtn{
+    display: block;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: transparent;
+    color: #BF132B;
+    border: 1px solid #BF132B;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.aBtn:hover{
+    background: #BF132B;
+    color: #fff;
+}
+
+
+.bestItem{
+    position: relative;
+    padding: 50px 0;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+}
+
+.bestItem h2{
+    margin-bottom: 200px;
+}
+
+.phone{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 320px;
+    height: 645px;
+    border: 10px solid #333;
+    border-radius: 50px;
+    box-shadow: 10px 20px 15px #999;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.bestSlider{
+    width: 100%;
+}
+
+.bestSliderItem{
+    display: block;
+    padding: 0 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.bestSliderItem img{
+    margin: 0 auto 30px;
+}
+
+.bestSliderItem h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.bestSliderItem p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bestItem .aBtn{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+}
+
+.mealKitPage{
+    padding: 50px 0 30px;
+    background: #f6f6f6;
+}
+
+.mealKitPage h2{
+    margin-bottom: 50px;
+}
+
+.mealKitIntro{  
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 30px;
+    margin: 0 auto 50px;
+    width: 1140px;
+    height: 500px;
+}
+
+.mealKitIntroList{
+    flex: 1;
+    text-align: center;
+}
+
+.mealKitImg{
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mealKitImg img{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.mealKitIntroList h3::before{ 
+    display: block;
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 2px;
+    background: #BF132B;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.mealKitIntroList h3{
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #292929;
+}
+
+.mealKitIntroList p{
+    font-size: 17px;
+    line-height: 1.3em;
+}
+
+.ad{
+    background: #f6f6f6;
+    padding-bottom: 50px;
+}
+
+.ad h2{
+    margin-bottom: 50px;
+}
+
+.adImgBox{
+    width: 100%;
+    height: 890px;
+    margin-bottom: 30px;
+}
+
+.adMainImg{
+    position: relative;
+    width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.adMainImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.adIntro{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 30px;
+    width: 1140px;
+    height: auto;
+    top:50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+}
+
+.adIntroList{
+    width: 370px;
+    text-align: center;
+}
+
+.adIntroList h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    line-height: 1.7rem;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(41, 41, 41, .8);
+}
+
+.adIntroList p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.7em;
+}
+
+.adIntroList p::before{
+    margin-bottom: 30px;
+}
+
+.adHide{
+    display: none;
+    width: 400px;
+    font-size: 11px;
+    line-height: 1.1rem;
+    margin: 0 auto 30px;
+}
+
+.adHide mark{
+    font-size: 13px;
+    line-height: 1.2rem;
+}
+
+@media screen and (max-width: 1650px) {
+    .adImgBox{
+        height: 790px;
+    }
+
+    .adMainImg{
+        width: 1400px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .adImgBox{
+        height: 730px;
+    }
+
+    .adMainImg{
+        width: 1300px;
+    }
+}
+
+
+@media screen and (max-width:1350px) {
+    .centerItem{
+        width: 350px;
+        height: 450px;
+    }
+    
+    .centerItem a{
+        width: 350px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .adImgBox{
+        height: 645px;
+    }
+
+    .adMainImg{
+        width: 1150px;
+    }
+
+    .adIntro{
+        width: 1000px;
+    }
+    
+    .adIntroList{
+        width: 300px;
+    }
+    
+    .adIntroList h3{
+        width: 180px;
+        height: 180px;
+        line-height: 1.6rem;
+        margin: 0 auto 20px;
+        font-size: 20px;
+    }
+    
+    .adIntroList p{
+        font-size: 17px;
+        line-height: 1.6em;
+    }
+    
+    .adIntroList p::before{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width:1300px) {
+
+    .eventCoupon h2,
+    .foodieMenu h2,
+    .bestItem h2,
+    .ad h2,
+    .mealKitPage h2{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .eventCoupon{
+        padding-top: 80px;
+    }
+
+    .foodieMenuList{
+        width: 100%;
+        height: 600px;
+    }
+
+    .foodieMenuItem > a{
+        width: 150px;
+        height: 150px;
+    }
+
+    .foodieMenuItem > a img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 5px;
+    }
+
+    .foodieMenuItem > a span{
+        font-size: 17px;
+    }
+
+    .bestItem{
+        width: 100%;
+        height: 850px;
+    }
+
+    .phone{
+        top: 150px;
+        width: 280px;
+        height: 550px;
+        border: 8px solid #333;
+    }
+
+    .bestSlider{
+        position: absolute;
+        top: 250px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bestSliderItem{
+        padding: 0 15px;
+    }
+    
+    .bestSliderItem img{
+        width: 220px;
+        height: 220px;
+        margin: 0 auto 20px;
+    }
+    
+    .bestSliderItem h4{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .bestSliderItem p{
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    
+    .bestSliderItem span{
+        font-size: 14px;
+    }
+    
+    .bestItem .aBtn{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+    }
+
+    .mealKitPage h2{
+        margin-bottom: 0;
+    }
+
+    .mealKitIntro{  
+        padding: 60px 0 30px;
+        margin: 0 auto 30px;
+        width: 900px;
+        height: 400px;
+    }
+    
+    .mealKitImg{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+    }
+    
+    .mealKitImg img{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    
+    .mealKitIntroList h3::before{ 
+        margin-bottom: 12px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 25px;
+        font-size: 20px;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 16px;
+        line-height: 1.3em;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .center{
+        width: 100%;
+        height: 450px;
+    }
+    
+    .centerItem{
+        width: 420px;
+        height: 450px;
+    }
+    
+    .centerItem a{
+        width: 420px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .mt80{
+        margin-top: 0;
+    }
+
+    .aBtn{
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 auto 40px;
+        font-size: 16px;
+        border-radius: 40px;
+    }
+
+    .adImgBox{
+        height: 535px;
+    }
+
+    .adMainImg{
+        width: 950px;
+    }
+
+    .adIntro{
+        width: 700px;
+    }
+    
+    .adIntroList{
+        width: 200px;
+    }
+    
+    .adIntroList h3{
+        width: 160px;
+        height: 160px;
+        line-height: 1.6rem;
+        margin: 0 auto 20px;
+        font-size: 18px;
+    }
+    
+    .adIntroList p{
+        font-size: 16px;
+        line-height: 1.6em;
+    }
+    
+    .adIntroList p::before{
+        margin-bottom: 17px;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+}
+
+@media screen and (max-width:1000px) {
+    .eventCoupon{
+        padding-top: 50px;
+    }
+
+    .center{
+        width: 100%;
+        height: 550px;
+    }
+
+    .centerItem{
+        width: 600px;
+        height: 550px;
+    }
+    
+    .centerItem a{
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .mealKitIntro{  
+        padding: 50px 0 20px;
+        margin: 0 auto 30px;
+        width: 800px;
+        height: 300px;
+    }
+    
+    .mealKitImg{
+        width: 110px;
+        height: 110px;
+    }
+    
+    .mealKitImg img{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    
+    .mealKitIntroList h3::before{ 
+        margin-bottom: 10px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 20px;
+        font-size: 16px;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    .adImgBox{
+        height: 450px;
+    }
+
+    .adMainImg{
+        width: 800px;
+    }
+} 
+
+@media screen and (max-width:830px) {
+    .eventCoupon h2,
+    .foodieMenu h2,
+    .bestItem h2,
+    .ad h2,
+    .mealKitPage h2{
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    .foodieMenuList{
+        width: 650px;
+        height: 400px;
+    }
+
+    .foodieMenuItem > a{
+        width: 110px;
+        height: 110px;
+    }
+
+    .foodieMenuItem > a img{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .foodieMenuItem > a span{
+        font-size: 13px;
+    }
+
+    .mealKitPage{
+        padding: 30px 0 20px;
+        background: #f6f6f6;
+    }
+    
+    .mealKitPage h2{
+        margin-bottom: 30px;
+    }
+    
+    .mealKitIntro{  
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 auto;
+        width: 600px;
+        height: 500px;
+    }
+    
+    .mealKitIntroList{
+        flex: 250px;
+    }
+    
+    .mealKitImg{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .mealKitImg img{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    
+    .mealKitIntroList h3::before{ 
+        display: block;
+        content: "";
+        clear: both;
+        width: 100%;
+        height: 2px;
+        background: #BF132B;
+        border-radius: 2px;
+        margin-bottom: 15px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 10px 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #292929;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    .adImgBox{
+        height: 340px;
+    }
+
+    .adMainImg{
+        width: 600px;
+    }
+
+    .adIntro{
+        width: 450px;
+    }
+    
+    .adIntroList{
+        width: 130px;
+    }
+    
+    .adIntroList h3{
+        width: 120px;
+        height: 120px;
+        line-height: 1.4rem;
+        margin: 0 auto 20px;
+        font-size: 15px;
+    }
+    
+    .adIntroList p{
+        font-size: 11px;
+        line-height: 1.4em;
+    }
+    
+    .adIntroList p::before{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .center{
+        width: 100%;
+        height: 450px;
+    }
+
+    .centerItem{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .centerItem a{
+        width: 400px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .foodieMenu h2{
+        margin-bottom: 30px;
+    }
+    
+    .foodieMenuList{
+        width: 500px;
+        height: 600px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .foodieMenuItem{
+        flex: 150px;
+    }
+    
+    .foodieMenuItem > a img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .foodieMenuItem > a span{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .eventCoupon h2,
+    .foodieMenu h2,
+    .bestItem h2,
+    .ad h2,
+    .mealKitPage h2{
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .mealKitPage{
+        padding: 30px 0 20px;
+    }
+    
+    .mealKitPage h2{
+        margin-bottom: 25px;
+    }
+    
+    .mealKitIntro{  
+        width: 500px;
+        height: 400px;
+    }
+    
+    .mealKitIntroList{
+        flex: 200px;
+    }
+    
+    .mealKitImg{
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 15px;
+    }
+    
+    .mealKitIntroList h3::before{ 
+        margin-bottom: 10px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 10px 30px;
+        font-size: 17px;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 13px;
+        line-height: 1.3em;
+    }
+
+    .adImgBox{
+        height: 225px;
+    }
+
+    .adMainImg{
+        width: 400px;
+    }
+
+    .adIntro{
+        width: 300px;
+    }
+    
+    .adIntroList{
+        width: 90px;
+    }
+    
+    .adIntroList h3{
+        width: 70px;
+        height: 70px;
+        line-height: 1.2rem;
+        margin: 0 auto 15px;
+        font-size: 13px;
+    }
+    
+    .adIntroList p{
+        display: none;
+    }
+
+    .adHide{
+        display: block;
+    }
+}
+
+@media screen and (max-width:550px) {}
+
+@media screen and (max-width:500px) {
+    .center{
+        width: 100%;
+        height: 350px;
+    }
+
+    .centerItem{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .centerItem a{
+        width: 350px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .centerItem h3{
+        font-size: 17px;
+    }
+    
+    .date{
+        font-size: 12px;
+    }
+
+    .aBtn{
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        border-radius: 40px;
+    }
+
+    .foodieMenu h2{
+        margin-bottom: 20px;
+    }
+    
+    .foodieMenuList{
+        width: 400px;
+        height: 500px;
+    }
+    
+    .foodieMenuItem{
+        flex: 100px;
+    }
+    
+    .foodieMenuItem > a img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .foodieMenuItem > a span{
+        font-size: 14px;
+    }
+
+    .mealKitPage{
+        padding: 20px 0 10px;
+    }
+    
+    .mealKitPage h2{
+        margin-bottom: 20px;
+    }
+    
+    .mealKitIntro{  
+        width: 400px;
+        height: 400px;
+    }
+    
+    .mealKitIntroList{
+        flex: 180px;
+    }
+    
+    .mealKitImg{
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 10px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .eventCoupon h2,
+    .foodieMenu h2,
+    .bestItem h2,
+    .ad h2,
+    .mealKitPage h2{
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+    
+    .center{
+        width: 100%;
+        height: 300px;
+    }
+
+    .centerItem{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .centerItem a{
+        width: 300px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .centerItem h3{
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+    
+    .date{
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+
+    .adImgBox{
+        height: 170px;
+    }
+
+    .adMainImg{
+        width: 300px;
+    }
+
+    .adHide{
+        display: block;
+        width: 300px;
+        font-size: 10px;
+        margin: 0 auto 30px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .center{
+        width: 100%;
+        height: 250px;
+    }
+
+    .centerItem{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .centerItem a{
+        width: 250px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .foodieMenu h2{
+        margin-bottom: 20px;
+    }
+    
+    .foodieMenuList{
+        width: 320px;
+        height: 450px;
+    }
+    
+    .foodieMenuItem{
+        flex: 90px;
+    }
+
+    .foodieMenuItem > a{
+        width: 90px;
+        height: 90px;
+    }
+
+    .foodieMenuItem > a span{
+        font-size: 12px;
+    }
+
+    .mealKitPage{
+        padding: 20px 0 10px;
+    }
+    
+    .mealKitPage h2{
+        margin-bottom: 15px;
+    }
+    
+    .mealKitIntro{  
+        width: 300px;
+        height: 400px;
+    }
+    
+    .mealKitIntroList{
+        flex: 150px;
+    }
+    
+    .mealKitImg{
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 10px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .foodieMenu h2{
+        margin-bottom: 15px;
+    }
+    
+    .foodieMenuList{
+        width: 290px;
+        height: 400px;
+    }
+    
+    .foodieMenuItem{
+        flex: 80px;
+    }
+
+    .foodieMenuItem > a{
+        width: 80px;
+        height: 80px;
+    }
+
+    .foodieMenuItem > a img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .foodieMenuItem > a span{
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+
